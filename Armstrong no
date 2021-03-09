@@ -1,0 +1,14 @@
+#Print all armstrong number in user given range.
+l=int(input("Enter lower range : "))  
+u=int(input("Enter upper range : "))  
+print("the armstrong no. between {0} and {1} are: ".format(l,u))  
+for n in range(l,u+1):  
+   sum=0  
+   temp=n  
+   while temp>0:  
+       r=temp % 10  
+       sum=sum+r** 3  
+       temp=temp//10  
+  
+   if n==sum:  
+       print(n,end=" ") 
